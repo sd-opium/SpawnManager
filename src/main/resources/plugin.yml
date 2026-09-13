@@ -1,0 +1,20 @@
+name: SpawnManager
+version: 1.0.0
+main: de.sdopium.spawnmanager.SpawnManager
+api-version: '1.21'
+author: sd-opium
+description: Einfaches Spawn-Plugin für Paper
+
+commands:
+  spawn:
+    description: Teleportiert dich zum Server-Spawn
+    usage: /spawn
+  setspawn:
+    description: Setzt den Server-Spawn
+    usage: /setspawn
+    permission: spawnmanager.setspawn
+
+permissions:
+  spawnmanager.setspawn:
+    description: Erlaubt das Setzen des Server-Spawns
+    default: op
